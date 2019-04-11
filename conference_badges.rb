@@ -26,7 +26,7 @@ def assign_rooms(array)
   array.each do |name|
     str = "Hello, #{name}! You'll be assigned to room #{room}!"
     arr.push(str)
-    puts str
+    #puts str
     room += 1
   end
   return arr
@@ -36,6 +36,13 @@ def printer(attendees)
   index = 0
   for i in attendees
     puts badge_maker(attendees[index])
+    index += 1
+  end
+  
+  index = 0
+  arr = assign_rooms(attendees)
+  for i in arr
+    puts arr[index]
     index += 1
   end
   #puts assign_rooms(attendees)
