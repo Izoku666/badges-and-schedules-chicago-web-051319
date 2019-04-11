@@ -33,8 +33,10 @@ def assign_rooms(array)
 end
 
 def printer(attendees)
-  puts batch_badge_creator(attendees)
-  puts assign_rooms(attendees)
-  return 0
+  index = 0
+  for i in attendees
+    puts badge_maker(attendees[index])
+    index += 1
+  end
   #puts assign_rooms(attendees)
 end
