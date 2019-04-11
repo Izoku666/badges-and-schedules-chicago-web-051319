@@ -17,7 +17,7 @@ def batch_badge_creator(array)
     index += 1
   end
   puts str
-  #return arr
+  return arr
   #puts str
 end
 
